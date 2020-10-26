@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AA32BCBD-9510-44E1-8E72-9976A06A6B56}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>C_Sharp_Profesional</RootNamespace>
-    <AssemblyName>C-Sharp Profesional</AssemblyName>
+    <ProjectGuid>{9F0711C7-39D3-445E-9EBF-E5C63BAB4982}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RefLocales</RootNamespace>
+    <AssemblyName>RefLocales</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,23 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Condicionales.cs" />
-    <Compile Include="Operaciones.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\LibreriaPedidos\LibreriaPedidos.csproj">
-      <Project>{bbb6be63-b1d7-4b0b-b0d3-d25bfcdc2ed9}</Project>
-      <Name>LibreriaPedidos</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\LibreriaProductos\LibreriaProductos.csproj">
-      <Project>{3677a7e6-2c37-4f3b-8a5e-32ea28e7f684}</Project>
-      <Name>LibreriaProductos</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
